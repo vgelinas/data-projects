@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    {
+        box-sizing: border-box;
+    }
+    .column {
+    float: left;
+    width: 50%;
+    }
+
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+    </style> 
+    <title>Dashboard</title> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="static/css/bootstrap.min.css" rel="stylesheet" media="screen">
+  </head>
+  <body> 
+    <div class="container"> 
+	  <br>
+		<h1> Activities dashboard </h1> 
+	  <hr>
+	    <p>It is a beautiful sunny day, why not go for a run?</p>  
+		<div class="row">
+          <div class="column">
+		    <img src="static/img/activities.png", width="600", height="400"/>  
+          </div>
+		  <div class="column">  
+		    <img src="static/img/steps.png", width="600", height="400"/>  
+          </div>
+		</div>
+    </div>
+  </body> 
+</html> 
