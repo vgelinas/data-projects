@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+	<title>Toronto Rent Prices Prediction</title> 
+  </head> 
+
+  <body> 
+	<h1>Predict Toronto rent prices </h1> 
+	This form predicts rent prices in the Toronto area using an XGBoost model. 
+	<hr>
+	<p>Please enter your desired features below (leave blank if not sure.)  
+	<form method="POST"> 
+	 {# This hidden_tag is a CSRF security feature. #}
+	 {{ form.hidden_tag() }} 
+	<ul>
+	 <li>Bedrooms (0-5)					: {{form.bedrooms}}</li> 
+	 <li>Bathrooms (0-4)				: {{form.bathrooms}}</li> 
+	 <li>Sqft (0-8000)					: {{form.sqft}}</li> 
+	 <li>City (e.g. Toronto, Markham)   : {{form.city}}</li>  
+	 <li>Postal code (first 3 digits)   : {{form.postal_code}}</li>
+	 <li>Longitude (e.g. -79.40)		: {{form.longitude}}</li>
+	 <li>Latitude  (e.g. 43.65)			: {{form.latitude}}</li>  
+	</ul>
+
+	 {{ form.submit() }} 
+	</form> 
+  </body> 

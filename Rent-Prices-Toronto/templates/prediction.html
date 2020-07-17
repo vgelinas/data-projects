@@ -1,0 +1,30 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content=""> 
+
+	<title> Predicted answer </title> 
+  </head> 
+
+  <body>
+	<h1>Thank you. Here is the information you gave:</h1> 
+	<ul>
+	 <li>Bedrooms    : {{session['bedrooms']}}</li>
+	 <li>Bathrooms   : {{session['bathrooms']}}</li>
+	 <li>Sqft        : {{session['sqft']}}</li>
+	 <li>City        : {{session['city']}}</li>
+	 <li>Postal code : {{session['postal_code']}}</li>
+	 <li>Longitude   : {{session['longitude']}}</li>
+	 <li>Latitude    : {{session['latitude']}}</li> 
+	</ul>
+	<h2>Your predicted monthly price is: {{results}}</h2>
+
+	<form method="POST"> 
+	 {{ form.hidden_tag() }} 
+	 {{ form.back() }}  
+	</form> 
+  </body> 
