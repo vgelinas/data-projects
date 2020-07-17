@@ -1,5 +1,5 @@
 # Dashboard 
-A tiny dashboard which pulls activity data from the Fitbit API and serves visualisations on a Flask template. 
+A tiny dashboard which pulls activity data from the Fitbit API and serves visualisations in Flask. 
 
 ![](../example/Dashboard.png) 
 

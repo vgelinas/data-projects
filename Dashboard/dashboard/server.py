@@ -1,4 +1,4 @@
-"""A class Server to handles communicating with the Dashboard MySQL database. 
+"""A class Server that handles communicating with the Dashboard MySQL database. 
 """ 
 import pandas as pd 
 import pymysql 
